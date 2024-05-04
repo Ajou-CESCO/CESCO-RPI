@@ -59,14 +59,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# GPIO.setmode(GPIO.BCM)
-# GPIO.setup(4, GPIO.IN, pull_up_down = GPIO.PUD_UP)
-# while True:
-#     time.sleep(1)
-#     if GPIO.input(4)==0:
-#         print(f"{4} CLOSED")
-#     elif GPIO.input(4)==1:
-#         print(f"{4} OPENED")
-#     else:
-#         print(f"{4} CRITICAL ERROR")
