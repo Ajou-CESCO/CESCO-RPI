@@ -1,0 +1,12 @@
+[Unit]
+Description=Queue Server Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=python3 /home/rpi/Cesco/PillinTime-RPi/queue/server.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
