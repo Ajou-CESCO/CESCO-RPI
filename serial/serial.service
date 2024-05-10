@@ -1,0 +1,10 @@
+[Unit]
+Description=Serial Number Extraction Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=sh /home/rpi/Cesco/PillinTime-RPi/serial/serialnumber.sh
+
+[Install]
+WantedBy=multi-user.target

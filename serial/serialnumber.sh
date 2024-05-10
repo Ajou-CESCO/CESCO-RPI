@@ -1,0 +1,1 @@
+cat /proc/cpuinfo | grep Serial | awk '{print $3}' > /home/rpi/Cesco/PillinTime-RPi/serial/serialnumber.txt
