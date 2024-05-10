@@ -1,0 +1,10 @@
+[Unit]
+Description=LTE Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=sh /home/rpi/Cesco/PillinTime-RPi/lte/script.sh < input.txt
+
+[Install]
+WantedBy=multi-user.target
