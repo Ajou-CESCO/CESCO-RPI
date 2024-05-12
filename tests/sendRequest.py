@@ -1,7 +1,7 @@
 import requests
 import datetime
 pin_num=1
-serial_number="000000009cab1d83"
+serial_number="100000006c14dcf1"
 msg=" / ".join([str(datetime.datetime.now()),str(pin_num),serial_number])
 
 data=msg.split(" / ")

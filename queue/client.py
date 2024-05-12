@@ -5,11 +5,14 @@ import datetime
 server_url="http://175.45.205.29:8080/api/cabinet/sensor"
 
 def send_request(msg:str):
+    print("MSG Received",msg)
+    msg=msg.replace("\n","")
     data=msg.split(" / ")
     json_dict={
         "serial":data[2],
         "index":data[1]
     }
+    print(json_dict)
     for i in range(3):
         try:
             res=requests.post(url=server_url,
