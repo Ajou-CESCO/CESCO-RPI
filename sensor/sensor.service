@@ -1,0 +1,12 @@
+[Unit]
+Description=Sensor Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=python3 /home/rpi/Cesco/PillinTime-RPi/sensor/getSensorData.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
