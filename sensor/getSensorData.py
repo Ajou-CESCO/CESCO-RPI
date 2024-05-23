@@ -31,10 +31,10 @@ rack_dict={
 }
 
 # send message to queue
-def send_msg(pin_num):
+def send_msg(pin_num:int) -> None:
     queue.put(" / ".join([str(datetime.datetime.now()),str(pin_num),serial_number]))
 
-def get_sensor_data(pin_num):
+def get_sensor_data(pin_num:int) -> None:
     # Setup Pin
     GPIO.setup(pin_num, GPIO.IN, pull_up_down = GPIO.PUD_UP)
     
@@ -53,7 +53,7 @@ def get_sensor_data(pin_num):
     except RuntimeError:
         print("GPIO CLEANED ALREADY")
 
-def main():
+def main() -> None:
     # Make threads for each sensor and run
     try:
         GPIO.setmode(GPIO.BCM)
