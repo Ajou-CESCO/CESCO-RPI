@@ -1,4 +1,4 @@
-## 💊 PillinTime-RPI
+## 💊 PillinTime-RPi
 
 ![SW캡스톤디자인_CESCO_썸네일](https://github.com/Ajou-CESCO/.github/assets/52846766/b92232ed-3fb7-4006-aa93-8a3b12a2d04f)
 
@@ -63,7 +63,7 @@
 
 ## 📖 서비스 세부 설명
 
-![CESCO_소프트콘_포스터](https://github.com/Ajou-CESCO/PillinTime-iOS/assets/79050615/4ac585d2-eb94-4e3d-8b59-e496a75e615d)
+![CESCO_소프트콘_포스터](https://github.com/Ajou-CESCO/PillinTime-RPi/assets/52846796/a0f95e8c-3113-47f2-884d-1a63fb507b71)
 
 <br>
 
