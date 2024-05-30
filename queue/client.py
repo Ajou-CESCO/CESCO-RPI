@@ -3,7 +3,7 @@ import requests
 import datetime
 
 # Main Server URL
-server_url="http://175.45.205.29:8080/api/cabinet/sensor"
+server_url="http://175.45.205.29:8080/api/dose/log"
 
 # Consume message from queue and send request to server
 def send_request(msg:str):
@@ -21,7 +21,7 @@ def send_request(msg:str):
     # Try to send request for 3 times maximum
     for i in range(3):
         try:
-            res=requests.post(url=server_url,
+            res=requests.patch(url=server_url,
                             json=json_dict,
                             timeout=10)
             print(res.status_code)
