@@ -10,7 +10,7 @@ json_dict={
     "serial":data[2],
     "index":data[1]
 }
-res=requests.post(url="http://175.45.205.29:8080/api/cabinet/sensor",
+res=requests.patch(url="http://175.45.205.29:8080/api/dose/log",
                   json=json_dict,
                   timeout=3
                   )
