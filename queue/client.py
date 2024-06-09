@@ -17,6 +17,8 @@ def send_request(msg:str):
         "index":data[1]
     }
     print(json_dict)
+    if json_dict['serial']=="test":
+        return
 
     # Try to send request for 3 times maximum
     for i in range(3):
